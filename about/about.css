@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root {
+    --primary-blue: #1e3a8a; /* Azul escuro */
+    --light-blue: #3b82f6;   /* Azul claro para hover */
+    --bg-color: #f9fafb;     /* Fundo neutro */
+    --text-color: #1f2937;   /* Texto principal */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: var(--light-blue);
+    color: white;
+  }
+  
+  main {
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+    color: var(--text-color);
+  }
+  
+  .about-container h1 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+  
+  .about-container p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .about-container a {
+    color: var(--primary-blue);
+    text-decoration: none;
+  }
+  
+  .about-container a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  
+  /* Celulares pequenos */
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .about-container {
+      padding: 1.5rem;
+    }
+  
+    .about-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about-container p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 481px) and (max-width: 900px) {
+    .about-container {
+      padding: 2rem 2.5rem;
+    }
+  
+    .about-container h1 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1400px) {
+    .about-container {
+      max-width: 1000px;
+      padding: 3rem;
+      font-size: 1.1rem;
+    }
+  
+    .about-container h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
