@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+  --primary-blue: #1e3a8a;
+  --light-blue: #3b82f6;
+  --bg-color: #f9fafb;
+  --text-color: #1f2937;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  color: var(--primary-blue);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-blue);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--light-blue);
+  color: white;
+}
