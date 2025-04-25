@@ -1,137 +1,137 @@
 @charset "UTF-8";
 
 :root {
-    --primary-blue: #1e3a8a; /* Azul escuro */
-    --light-blue: #3b82f6;   /* Azul claro para hover */
-    --bg-color: #f9fafb;     /* Fundo neutro */
-    --text-color: #111827;
-    --social-bg: #e0e7ff;    /* Fundo dos ícones sociais (pode ser substituído por ícones reais) */
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  /* Menu */
-  header {
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--primary-blue);
-    transition: background-color 0.3s ease, padding 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-  }
-  
-  .menu a.active,
-  .menu a:hover {
-    background-color: var(--light-blue);
-    color: white;
-  }
-  
-  /* Container geral */
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-  }
-  
-  /* Foto de perfil */
-  .profile-container {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    margin-bottom: 1.5rem;
-  }
-  
-  .photo-border {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-blue);
-    border-radius: 50%;
-    z-index: 0;
-  }
-  
-  .profile-photo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-photo:hover {
-    transform: translate(-8px, -8px);
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 1rem 0 2rem;
-    max-width: 480px;
-    line-height: 1.6;
-  }
-  
-  .socials {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--social-bg);
-    display: inline-block;
-    transition: transform 0.3s ease;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .icon:hover {
-    transform: translateY(-6px);
-  }
-  
-  .linkedin {
-    background-image: url('../images/social-medias/linkedin.png');
-  }
-  .github {
-    background-image: url('../images/social-medias/github.png');
-  }
-  .youtube {
-    background-image: url('../images/social-medias/youtube.png');
-  }
-  .instagram {
-    background-image: url('../images/social-medias/instagram.png');
-  }
+  --primary-blue: #1e3a8a; /* Azul escuro */
+  --light-blue: #3b82f6;   /* Azul claro para hover */
+  --bg-color: #f9fafb;     /* Fundo neutro */
+  --text-color: #111827;
+  --social-bg: #e0e7ff;    /* Fundo dos ícones sociais */
+}
 
-  /* Responsividade */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
-/* 600px */
+/* Menu */
+header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-blue);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+/* Container geral */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/* Foto de perfil */
+.profile-container {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 1.5rem;
+}
+
+.photo-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-blue);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.profile-photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translate(-8px, -8px);
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0 2rem;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--social-bg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon:hover {
+  transform: translateY(-6px);
+}
+
+.linkedin {
+  background-image: url('../images/social-medias/linkedin.png');
+}
+.github {
+  background-image: url('../images/social-medias/github.png');
+}
+.youtube {
+  background-image: url('../images/social-medias/youtube.png');
+}
+.instagram {
+  background-image: url('../images/social-medias/instagram.png');
+}
+
+/* Responsividade */
+
+/* até 600px */
 @media (max-width: 600px) {
   .menu ul {
     flex-direction: column;
@@ -152,7 +152,7 @@
   .icon {
     width: 48px;
     height: 48px;
-    background-size: 50%;
+    background-size: cover;
   }
 }
 
@@ -171,7 +171,7 @@
   .icon {
     width: 54px;
     height: 54px;
-    background-size: 55%;
+    background-size: cover;
   }
 }
 
@@ -190,8 +190,6 @@
   .icon {
     width: 70px;
     height: 70px;
-    background-size: 65%;
+    background-size: cover;
   }
 }
-
-  
